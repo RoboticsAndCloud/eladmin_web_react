@@ -148,15 +148,15 @@ const LoginUI = (props: LoginUIProps) => {
       <div className="login-footer">
         {/* <p className="login-footer-recommed">* 推荐使用 Chrome 或 FireFox 浏览器访问 *</p> */}
         <p className="login-footer-copyright">
-          <a href="https://github.com/RoboticsAndCloud/ailu-admin_typescript" target="_black">
+          <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" target="_black">
             Admin System
           </a>{' '}
           © 2023 Created by
-          <a href="https://github.com/RoboticsAndCloud/ailu-admin_typescript" target="_black">
+          <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" target="_black">
             {' '}
             Fei
           </a>
-          <a href="https://github.com/RoboticsAndCloud/ailu-admin_typescript" target="_black">
+          <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" target="_black">
             {' '}
             <LikeOutlined /> <GithubOutlined />
           </a>

@@ -211,7 +211,7 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
                 <Col span={6} className="text-center" style={{ marginBottom: 12 }}>
                   <Space>
                    <GithubOutlined />
-                   <a href="">GitHub</a>
+                   <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git">GitHub</a>
                   </Space>
                 </Col>
               </Row>

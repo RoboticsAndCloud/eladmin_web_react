@@ -1,7 +1,8 @@
 {
-  "name": "ailu-admin",
+  "name": "eladmin_web_react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://RoboticsAndCloud.github.io/eladmin_web_react",
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@testing-library/jest-dom": "^5.14.1",
@@ -35,7 +36,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "jsonserver": "json-server --watch db.json --host 10.227.96.160 --port 3004 --routes routes.json"
+    "jsonserver": "json-server --watch db.json --host 10.227.96.160 --port 3004 --routes routes.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

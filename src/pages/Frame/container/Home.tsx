@@ -441,7 +441,7 @@ const FrameHome: React.FC = () => {
             }}
           />
           <span className="admin-header-action-2">
-            <a target={'_blank'} href="https://github.com/RoboticsAndCloud/ailu-admin_typescript" rel="noreferrer">
+            <a target={'_blank'} href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" rel="noreferrer">
               <GithubOutlined rev={undefined} />
             </a>
           </span>
