@@ -12,25 +12,26 @@ import PrivilegeUI from '../component/PrivilegeUI';
 import { PrivilegeListItemType } from '../../../store/types/privilegeType';
 import { arrayToString } from '../../../utils/utils';
 import AccountAddModifyUI from '../component/AddModifyUI';
+import { mockAccountList, mockRoleList, mockRolePrivilegeType } from '../../Frame/container/HomeMockInfo';
 
 let searchKeyWords = {};
 let accountListRoleInfo: RoleInfoType; // 账号列表角色信息
 
 const RoleList: React.FC = () => {
   // 角色列表相关 state
-  const [roleList, setRoleList] = useState<RoleInfoType[]>([]);
+  const [roleList, setRoleList] = useState<RoleInfoType[] | any[]>([]);
   const [pagination, setPagination] = useState(initPagination);
   const [editModalOpen, setEditModalOpen] = useState<boolean>(false);
   // 角色修改相关 state
-  const [editRoleInfo, setEditRoleInfo] = useState<RoleInfoType>();
+  const [editRoleInfo, setEditRoleInfo] = useState<RoleInfoType | any>();
   // 角色账号相关 state
   const [accountModalOpen, setAccountModalOpen] = useState<boolean>(false);
-  const [roleAccountList, setRoleAccountList] = useState<AccountInfoType[]>([]);
+  const [roleAccountList, setRoleAccountList] = useState<AccountInfoType[] | any[]>([]);
   const [accountPagination, setAccountPagination] = useState(initPagination);
   // 角色权限相关 state
   const [privilegeModalOpen, setPrivilegeModalOpen] = useState<boolean>(false);
   const [rolePrivilegIds, setRolePrivilegeIds] = useState<string[]>([]);
-  const [allPrivileges, setAllPrivileges] = useState<PrivilegeListItemType[]>([]);
+  const [allPrivileges, setAllPrivileges] = useState<PrivilegeListItemType[] | any[]>([]);
 
   const [addModalOpen, setAddModalOpen] = useState<boolean>(false);
   const [addRoleInfo, setAddRoleInfo] = useState<RoleInfoType>();
@@ -115,6 +116,13 @@ const RoleList: React.FC = () => {
       })
       .catch(e => {
         console.log('获取角色权限列表err:', e);
+
+        let roleInfo = mockRoleList
+        let privilegeList = mockRolePrivilegeType
+        setEditRoleInfo(roleInfo);
+        setAllPrivileges(privilegeList.all_privilege);
+        setRolePrivilegeIds(arrayToString(privilegeList.privilege_ids));
+        setPrivilegeModalOpen(true);
       });
   };
 
@@ -208,6 +216,16 @@ const RoleList: React.FC = () => {
       })
       .catch(e => {
         console.log(e);
+        
+        let roleList = mockRoleList
+        setRoleList(roleList.list);
+        setPagination({
+          ...initPagination,
+          current: roleList.page_info?.page_num,
+          pageSize: roleList.page_info?.page_size,
+          total: roleList.page_info?.total_num,
+        });
+
       });
   };
 
@@ -234,6 +252,19 @@ const RoleList: React.FC = () => {
       })
       .catch(e => {
         console.log(e);
+
+        let accountList = mockAccountList
+        setRoleAccountList(accountList.list);
+        setAccountPagination({
+          ...initPagination,
+          current: accountList.page_info?.page_num,
+          pageSize: accountList.page_info?.page_size,
+          total: accountList.page_info?.total_num,
+        });
+        if (!accountModalOpen) {
+          setAccountModalOpen(true);
+        }
+
       });
   };
 

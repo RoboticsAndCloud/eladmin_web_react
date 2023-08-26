@@ -30,12 +30,14 @@ import {
 } from '../../../store/types/privilegeType';
 import DynamicIcon from '../../../components/DynamicIcon/DynamicIcon';
 import { FrameBreadcrumbItem } from '../../../store/types/adminType';
+import mockProfileInfo from './HomeMockInfo';
+import mockProfileInfomation from './HomeMockInfo';
 
 // const {Menu, Button} = antd;
 const { Header, Sider, Content } = Layout;
 
 const homeConfig = {
-  footerText: 'Admin System ©2023 Created by Frank',
+  footerText: 'Admin System ©2023 Created by @RoboticsAndCloud',
 };
 
 const mockMenuItems: MenuProps['items'] = [
@@ -149,8 +151,8 @@ const getMenuItemsByPrivilegeList = (
 };
 
 const FrameHome: React.FC = () => {
-  const [loginAccountInfo, setLoginAccountInfo] = useState<AccountInfoType>();
-  const [privilegeList, setPrivilegeList] = useState<PrivilegeListItemType[]>();
+  const [loginAccountInfo, setLoginAccountInfo] = useState<AccountInfoType|any>();
+  const [privilegeList, setPrivilegeList] = useState<PrivilegeListItemType[]| any[]>();
   const [navItems, setNavItems] = useState<MenuProps['items']>([]); // 导航列表
   const [menuItems, setMenuItems] = useState<MenuProps['items']>([]); // 菜单列表
   const [breadcrumbItems, setBreadcrumbItems] = useState<FrameBreadcrumbItem[]>([]); // 面包导航
@@ -206,25 +208,17 @@ const FrameHome: React.FC = () => {
       })
       .catch(e => {
         console.log('get profile catch: ', e);
-        // alert(e)
+        // alert("This is a demo web system, please check the source code for more details.")
+
+        // add mockprofile information
+        let profileInfo = mockProfileInfo
+        setProfileAccountInfo(profileInfo.account_info);
+        setLoginAccountInfo(profileInfo.account_info);
+        setPrivilegeList(profileInfo.privilege_list);
+        setPrivilegeNavItems(profileInfo.privilege_list); // 更新导航权限
+
+        setPrivilegeMenusItems(profileInfo.privilege_list); // 更新菜单权限
       });
-
-  
-      // ProfileService.getProfileInfo()
-      // .then((profileInfo: ProfileInfoType) => {
-        
-      //   // setProfileAccountInfo(profileInfo.account_info);
-      //   setLoginAccountInfo(profileInfo.account_info);
-      //   setPrivilegeList(profileInfo.privilege_list);
-      //   setPrivilegeNavItems(profileInfo.privilege_list); // 更新导航权限
-      //   setPrivilegeMenusItems(profileInfo.privilege_list); // 更新菜单权限
-      // })
-      // .catch(e => {
-      //   console.log('get profile catch: ', e);
-      //   // alert(e)
-      // });
-
-      
 
       var account_info: AccountInfoType
       account_info = {
@@ -240,67 +234,14 @@ const FrameHome: React.FC = () => {
           "role_ids": "22"
         }
 
-      const mockProfileInfo = {
-        account_info,
-
-        "privilege_list": [
-          {
-            "label": "账号",
-            "key": "privilege",
-            "children": [
-              {
-                "label": "<Link to=\"/privilege/add\">添加权限</Link>",
-                "key": "privilege-add",
-                "icon": "<UnorderedListOutlined />"
-              },
-              {
-                "label": "<Link to=\"/privilege/list\">权限列表</Link>",
-                "key": "privilege-list",
-                "icon": "<UnorderedListOutlined />"
-              }
-            ]
-          },
-          {
-            "label": "角色管理",
-            "key": "privilege",
-            "children": [
-              {
-                "label": "<Link to=\"/privilege/add\">添加权限</Link>",
-                "key": "privilege-add",
-                "icon": "<UnorderedListOutlined />"
-              },
-              {
-                "label": "<Link to=\"/privilege/list\">权限列表</Link>",
-                "key": "privilege-list",
-                "icon": "<UnorderedListOutlined />"
-              }
-            ]
-          },
-          {
-            "label": "权限管理",
-            "key": "privilege",
-            "children": [
-              {
-                "label": "<Link to=\"/privilege/add\">添加权限</Link>",
-                "key": "privilege-add",
-                "icon": "<UnorderedListOutlined />"
-              },
-              {
-                "label": "<Link to=\"/privilege/list\">权限列表</Link>",
-                "key": "privilege-list",
-                "icon": "<UnorderedListOutlined />"
-              }
-            ]
-          }
-        ]
-      }
+      const mockProfileInfo = mockProfileInfomation
   };
 
   /**
    * 更新导航 item 数据
    * @param privilegeList 权限列表
    */
-  const setPrivilegeNavItems = (privilegeList?: PrivilegeListItemType[]) => {
+  const setPrivilegeNavItems = (privilegeList?: PrivilegeListItemType[] | any[]) => {
     const navItems = getNavItemsByPrivilegeList(privilegeList);
     setNavItems(navItems);
   };
@@ -309,7 +250,7 @@ const FrameHome: React.FC = () => {
    * 更新菜单 item 数据
    * @param privilegeList 权限列表
    */
-  const setPrivilegeMenusItems = (privilegeList?: PrivilegeListItemType[]) => {
+  const setPrivilegeMenusItems = (privilegeList?: PrivilegeListItemType[]| any[]) => {
     if (!privilegeList || privilegeList.length === 0) {
       setMenuItems([]);
       return;
@@ -401,32 +342,7 @@ const FrameHome: React.FC = () => {
       /> */}
       <Layout>
         <FrameSidebarUI menuItems={menuItems} menuClickCallback={menuClickCallback} collapsed={collapsed}/>
-{/* 
-        <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={['1']}
-          items={[
-            {
-              key: '1',
-              icon: <UserOutlined />,
-              label: 'nav 1',
-            },
-            {
-              key: '2',
-              icon: <VideoCameraOutlined />,
-              label: 'nav 2',
-            },
-            {
-              key: '3',
-              icon: <UploadOutlined />,
-              label: 'nav 3',
-            },
-          ]}
-        />
-      </Sider> */}
+
         <Layout className="admin-main">
           
         <Header style={{ padding: 0, background: 'white' }}>

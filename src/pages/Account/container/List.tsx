@@ -14,17 +14,18 @@ import { initPagination } from '../../../store/states/adminState';
 import { RoleInfoType } from '../../../store/types/roleType';
 import AccountDetailUI from '../component/DetailUI';
 import AccountAddModifyUI from '../component/AddModifyUI';
+import { mockAccountDetails, mockAccountList } from '../../Frame/container/HomeMockInfo';
 
 let searchValues = {};
 
 const AccountList: React.FC = () => {
-  const [accountList, setAccountList] = useState<AccountInfoType[]>([]);
+  const [accountList, setAccountList] = useState<AccountInfoType[] | any[]>([]);
   const [pagination, setPagination] = useState(initPagination);
   const [editModalOpen, setEditModalOpen] = useState<boolean>(false);
-  const [editAccountInfo, setEditAccountInfo] = useState<AccountInfoType>();
-  const [detailAccountInfo, setDetailAccountInfo] = useState<AccountDetailInfoType>();
+  const [editAccountInfo, setEditAccountInfo] = useState<AccountInfoType | any>();
+  const [detailAccountInfo, setDetailAccountInfo] = useState<AccountDetailInfoType | any>();
   const [detailModalOpen, setDetailModalOpen] = useState<boolean>(false);
-  const [roleList, setRoleList] = useState<RoleInfoType[]>([]);
+  const [roleList, setRoleList] = useState<RoleInfoType[] | any[]>([]);
 
   const [addModalOpen, setAddModalOpen] = useState<boolean>(false);
   const [addAccountInfo, setAddAccountInfo] = useState<AccountInfoType>();
@@ -52,6 +53,15 @@ const AccountList: React.FC = () => {
       })
       .catch(e => {
         console.log(e);
+        let res = mockAccountList
+        setAccountList(res.list);
+        setPagination({
+          ...initPagination,
+          current: res.page_info?.page_num,
+          pageSize: res.page_info?.page_size,
+          total: res.page_info?.total_num,
+        });
+
       });
   };
 
@@ -102,6 +112,20 @@ const AccountList: React.FC = () => {
       })
       .catch(e => {
         console.log('修改失败err:', e);
+
+        let editAccountInfo = mockAccountDetails
+        const roleIds: string[] = [];
+        editAccountInfo.account_roles.forEach((accountRole: RoleInfoType) => {
+          roleIds.push(String(accountRole.role_id));
+        });
+        editAccountInfo.account_info.role_ids = '';
+        if (roleIds.length > 0 && editAccountInfo.account_info) {
+          editAccountInfo.account_info.role_ids = roleIds.toString();
+        }
+        setEditAccountInfo(editAccountInfo.account_info);
+        setRoleList(editAccountInfo.role_list);
+        setEditModalOpen(true);
+
       });
   };
 
@@ -118,6 +142,10 @@ const AccountList: React.FC = () => {
       })
       .catch(e => {
         console.log('修改失败err:', e);
+
+        let accountDetailInfo = mockAccountDetails
+        setDetailAccountInfo(accountDetailInfo);
+        setDetailModalOpen(true);
       });
   };
 

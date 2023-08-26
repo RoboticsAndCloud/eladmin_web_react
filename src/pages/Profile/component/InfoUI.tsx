@@ -1,6 +1,7 @@
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Space } from 'antd';
 import { LayoutForm, LayoutFormButton } from '../../../config/layout';
 import { ProfileInfoType } from '../../../store/types/profileType';
+import MainDashbaordUI from '../../Main/component/Dashboard';
 
 interface ProfileInfoUIProps {
   profileInfo?: ProfileInfoType;
@@ -65,9 +66,14 @@ const ProfileInfoUI = (props: ProfileInfoUIProps) => {
         </Form.Item>
 
         <Form.Item {...LayoutFormButton}>
+          <Space>
           <Button type="primary" htmlType="submit">
             保存
           </Button>
+          <Button type="primary" htmlType="button" href="/eladmin_web_react">
+            返回
+          </Button>
+          </Space>
         </Form.Item>
       </Form>
     </div>

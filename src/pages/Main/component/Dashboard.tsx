@@ -68,7 +68,7 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
           type="info"
           message={
             <Marquee pauseOnHover gradient={false} speed={60}>
-              公告：Welcome~ Welcome~
+              公告：Welcome~ Welcome~  [This is a demo web system, please check the source code for more details]
             </Marquee>
           }
         />

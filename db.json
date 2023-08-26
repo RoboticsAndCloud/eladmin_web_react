@@ -767,6 +767,7 @@
       1
     ]
   },
+
   "roledetails": {
     "role_info": {
       "role_id": 1,
@@ -778,6 +779,7 @@
       "update_time": "20230606"
     }
   },
+  
   "rolelist": {
     "list": [
       {
