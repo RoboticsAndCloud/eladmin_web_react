@@ -18,7 +18,8 @@ const FrameSidebarUI = (props: FrameSidebarUIProps) => {
       theme="dark"
     >
     <div className="admin-header-logo">
-      <a href="/">
+      {/* <a href="/"> */}
+      <a href="/eladmin_web_react">  {/*for github deployment*/}
       <img src={logoImg} alt="logo"></img>
       <span> Admin System </span>
       </a>
