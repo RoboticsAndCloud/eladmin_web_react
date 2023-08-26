@@ -9,6 +9,7 @@
   
 eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统 前端界面
 </br>
+</div>
 
 ## 项目源码
 
@@ -17,8 +18,7 @@ eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管
 |  github   |  https://github.com/elunez/eladmin   |  https://github.com/elunez/eladmin-web   |  https://github.com/RoboticsAndCloud/eladmin_web_react   
 
 
-[![platforms](https://img.shields.io/badge/platform-All-yellow.svg?style=flat)]()
-
+<div align="center">
 ![](./docs/imgs/login1.jpg)
 
 ![](./docs/imgs/login.png)
