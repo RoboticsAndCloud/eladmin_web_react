@@ -171,7 +171,7 @@ const FrameHome: React.FC = () => {
    */
   const logoutCallback = () => {
     DispatchLogoutAction(dispatch, null); // dispatch redux
-    window.location.href = '/';
+    window.location.href = '/eladmin_web_react';
   };
 
   /**

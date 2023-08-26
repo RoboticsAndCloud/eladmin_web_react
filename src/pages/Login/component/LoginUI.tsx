@@ -154,7 +154,7 @@ const LoginUI = (props: LoginUIProps) => {
           © 2023 Created by
           <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" target="_black">
             {' '}
-            Fei
+            @RoboticsAndCloud
           </a>
           <a href="https://github.com/RoboticsAndCloud/eladmin_web_react.git" target="_black">
             {' '}
