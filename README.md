@@ -10,7 +10,7 @@
 
 #### 项目源码
 
-|   后端源码  |   前端源码（vue)  | 前端源码（React) |
+|   后端源码  |   前端源码（Vue)  | 前端源码（React) |
 |--- | --- | --- |
 |  https://github.com/elunez/eladmin   |  https://github.com/elunez/eladmin-web   |  https://github.com/RoboticsAndCloud/eladmin_web_react   
 
