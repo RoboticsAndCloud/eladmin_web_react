@@ -16,7 +16,7 @@ const Login: React.FC = () => {
   const systemLoginCallback = (values: { account_name: string; password: string }) => {
     const loginInfo = "admin"
     DispatchLoginAction(dispatch, loginInfo);
-    window.location.href = '/';
+    window.location.href = '/eladmin_web_react';
 
     // LoginService.systemLogin({
     //   account_name: values.account_name,

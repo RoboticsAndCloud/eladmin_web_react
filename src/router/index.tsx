@@ -30,6 +30,18 @@ const AdminRouters: IRouter[] = [
     component: home(),
   },
   {
+    path: '/eladmin_web_react',
+    key: 'home1',
+    component: home(),
+    children: [
+      {
+        index: true,
+        key: 'main_index',
+        component: <Main.MainDashboardIndex />,
+      },
+    ]
+  },
+  {
     path: '/',
     key: 'index',
     component: home(),
@@ -90,7 +102,7 @@ const AdminRouters: IRouter[] = [
         component: <Error404 />,
       },
     ],
-  },
+  }
 ];
 
 export default AdminRouters;
