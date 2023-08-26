@@ -1,17 +1,23 @@
+<h1 style="text-align: center">ELADMIN 后台管理前端（React）系统</h1>
 
-<h2 align="center">
-  
-![](./docs/imgs/logo.png)
+#### 项目简介
+- eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面
+- 本系统使用jsonserver模拟后端服务，若需要与eladmin后端进行联调，请调整接口数据格式及对应的后端服务地址
 
-</h2>
+**体验地址：**  [https://roboticsandcloud.github.io/eladmin_web_react](https://roboticsandcloud.github.io/eladmin_web_react)
+
+**账号密码：** `admin / admin`
+
+#### 项目源码
+
+|   后端源码  |   前端源码（vue)  | 前端源码（React) |
+|--- | --- | --- |
+|  https://github.com/elunez/eladmin   |  https://github.com/elunez/eladmin-web   |  https://github.com/RoboticsAndCloud/eladmin_web_react   
+
+#### 项目展示
 
 <div align="center">
   
-eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统 前端界面
-</br>
-
-[![platforms](https://img.shields.io/badge/platform-All-yellow.svg?style=flat)]()
-
 ![](./docs/imgs/login1.jpg)
 
 ![](./docs/imgs/login.png)
