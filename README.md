@@ -59,8 +59,9 @@ $ npm start   # 浏览器访问 http://localhost:3000
 
 欢迎任何类型的贡献
 
-- 如果您喜欢该项目，请 [Star](https://github.com/phachon/ailu-admin/stargazers).
+- 如果您喜欢该项目，请 [Star](https://github.com/RoboticsAndCloud/eladmin_web_react.git).
 - 欢迎您一起加入项目，请 [Pull Request](https://github.com/RoboticsAndCloud/eladmin_web_react/pulls).
 
----
+## 致谢
+
 - 感谢 [phachon](https://github.com/phachon/ailu-admin) 大佬提供的前端模板
