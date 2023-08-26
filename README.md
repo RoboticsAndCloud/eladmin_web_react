@@ -10,10 +10,7 @@
 eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统 前端界面
 </br>
 
-[![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/phachon/ailu-admin/master/LICENSE)
 [![platforms](https://img.shields.io/badge/platform-All-yellow.svg?style=flat)]()
-[![download_count](https://img.shields.io/github/downloads/phachon/ailu-admin/total.svg?style=plastic)](https://github.com/phachon/ailu-admin/releases) 
-[![release](https://img.shields.io/github/release/phachon/ailu-admin.svg?style=flat)](https://github.com/phachon/ailu-admin/releases) 
 
 ![](./docs/imgs/login1.jpg)
 
