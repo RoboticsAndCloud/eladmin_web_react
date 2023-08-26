@@ -1,0 +1,15 @@
+{
+  "/admin-api/admin/profile/info": "/profile",
+  
+  "/admin-api/admin/account/list*":"/account",
+  "/admin-api/admin/account/detail*": "/account_details",
+  "/admin-api/admin/account/edit*": "/account_details",
+  "/admin-api/admin/account/save*": "/account_for_add_details",
+  "/admin-api/admin/account/modify*": "/account_for_add_details",
+
+  "/admin-api/admin/role/list*": "/rolelist",
+  "/admin-api/admin/role/account_list*":"/account",
+  "/admin-api/admin/role/privilege_edit*": "/role_privilege_type",
+  "/admin-api/admin/role/edit*": "/roledetails"
+
+}
