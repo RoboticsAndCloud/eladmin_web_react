@@ -1,7 +1,11 @@
-<h1 style="text-align: center">ELADMIN 后台管理前端系统</h1>
+<h1 style="text-align: center">ELADMIN 后台管理前端（React）系统</h1>
 
 #### 项目简介
 eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统 前端界面
+
+**体验地址：**  [https://roboticsandcloud.github.io/eladmin_web_react](https://roboticsandcloud.github.io/eladmin_web_react)
+
+**账号密码：** `admin / admin`
 
 #### 项目源码
 
