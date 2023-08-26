@@ -1,7 +1,8 @@
 <h1 style="text-align: center">ELADMIN 后台管理前端（React）系统</h1>
 
 #### 项目简介
-eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面，本系统使用jsonserver模拟后端服务，若需要与eladmin后端进行联调，请调整接口数据格式及对应的后端服务地址
+- eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面
+- 本系统使用jsonserver模拟后端服务，若需要与eladmin后端进行联调，请调整接口数据格式及对应的后端服务地址
 
 **体验地址：**  [https://roboticsandcloud.github.io/eladmin_web_react](https://roboticsandcloud.github.io/eladmin_web_react)
 
