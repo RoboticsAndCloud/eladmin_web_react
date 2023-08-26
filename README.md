@@ -33,15 +33,17 @@ todo 开发中。。。
 ## 使用
 
 ### 环境
-- node
-- npm 
+- node v16.20.1
+- npm v9.2.0
 
 ### 安装
 
 ```bash
-$ https://github.com/phachon/ailu-admin.git
-$ cd ailu-admin
+$ https://github.com/RoboticsAndCloud/eladmin_web_react.git
+$ cd eladmin_web_react
 $ npm install
+$ npm run jsonserver # Launch the jsonserver, please check package.json for more details,"jsonserver": "json-server --watch db.json --host 10.227.96.160 --port 3004 --routes routes.json"
+
 $ npm start   # 浏览器访问 http://localhost:3000
 ```
 
@@ -58,15 +60,7 @@ $ npm start   # 浏览器访问 http://localhost:3000
 欢迎任何类型的贡献
 
 - 如果您喜欢该项目，请 [Star](https://github.com/phachon/ailu-admin/stargazers).
-- 如果在使用过程中有任何问题， 请提交 [Issue](https://github.com/phachon/ailu-admin/issues).
-- 如果您发现并解决了bug，请提交 [Pull Request](https://github.com/phachon/ailu-admin/pulls).
-- 如果您想二次开发，欢迎 [Fork](https://github.com/phachon/ailu-admin/network/members).
+- 欢迎您一起加入项目，请 [Pull Request](https://github.com/RoboticsAndCloud/eladmin_web_react/pulls).
 
-## License
-
-MIT
-
-Thanks
 ---
-
-Created By phachon
+- 感谢 [phachon](https://github.com/phachon/ailu-admin) 大佬提供的前端模板
