@@ -1,14 +1,8 @@
-
-<h2 align="center">
-  
-![](./docs/imgs/logo.png)
-
-</h2>
+<h1 style="text-align: center">ELADMIN 后台管理前端系统</h1>
 
 <div align="center">
   
 eladmin 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统 前端界面
-</br>
 </div>
 
 ## 项目源码
