@@ -39,7 +39,7 @@ todo 开发中。。。
 ### 安装
 
 ```bash
-$ https://github.com/RoboticsAndCloud/eladmin_web_react.git
+$ git clone https://github.com/RoboticsAndCloud/eladmin_web_react.git
 $ cd eladmin_web_react
 $ npm install
 $ npm run jsonserver # Launch the jsonserver, please check package.json for more details,"jsonserver": "json-server --watch db.json --host 10.227.96.160 --port 3004 --routes routes.json"
@@ -65,3 +65,4 @@ $ npm start   # 浏览器访问 http://localhost:3000
 ## 致谢
 
 - 感谢 [phachon](https://github.com/phachon/ailu-admin) 大佬提供的前端模板
+- 感谢 [elunez](https://github.com/elunez/eladmin) 大佬提供的后端模板和系统逻辑
