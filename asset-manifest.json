@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/eladmin_web_react/static/css/main.cbd89a7a.css",
-    "main.js": "/eladmin_web_react/static/js/main.9df1e723.js",
+    "main.js": "/eladmin_web_react/static/js/main.2c17ec5c.js",
     "static/media/background.webp": "/eladmin_web_react/static/media/background.17d497e5a7c6f756a704.webp",
     "index.html": "/eladmin_web_react/index.html",
     "main.cbd89a7a.css.map": "/eladmin_web_react/static/css/main.cbd89a7a.css.map",
-    "main.9df1e723.js.map": "/eladmin_web_react/static/js/main.9df1e723.js.map"
+    "main.2c17ec5c.js.map": "/eladmin_web_react/static/js/main.2c17ec5c.js.map"
   },
   "entrypoints": [
     "static/css/main.cbd89a7a.css",
-    "static/js/main.9df1e723.js"
+    "static/js/main.2c17ec5c.js"
   ]
 }
