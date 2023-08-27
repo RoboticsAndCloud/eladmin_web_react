@@ -105,3 +105,11 @@ Button color
 https://stackoverflow.com/questions/56718231/is-there-a-way-to-change-antd-internal-buttons-color
 
 npm run deploy
+
+menu 
+/home/ascc/LF_Workspace/RobotDevieManagement/eadmin/eladmin-web/src/views/system/menu/index.vue
+
+https://codesandbox.io/s/8ffxsz?file=/demo.tsx:1087-1093
+
+how to mimic promise function to get data
+https://codesandbox.io/s/859e9j?file=/src/service/NodeService.js:16556-16572

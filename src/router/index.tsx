@@ -10,6 +10,7 @@ import Role from '../pages/Role';
 import { IRouter } from '../components/Router/View';
 import Main from '../pages/Main';
 import Log from '../pages/Log';
+import Menu from '../pages/Menu';
 
 function home(): ReactNode {
   if (LoginTokenStore.checkTokenExpire()) {
@@ -90,6 +91,11 @@ const AdminRouters: IRouter[] = [
         path: '/privilege/list',
         key: 'privilege_list',
         component: <Privilege.PrivilegeList />,
+      },
+      {
+        path: '/menu/list',
+        key: 'menu_list',
+        component: <Menu.MenuList />,
       },
       {
         path: '/log/list',

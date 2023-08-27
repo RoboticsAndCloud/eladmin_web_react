@@ -10,7 +10,7 @@ const LocalProfileAccountKey = "AL_ADMIN_PROFILE_ACCOUNT"
 export const LoginTokenStore = new Token(LocalLoginTokenKey, 10 * 60 * 60 * 1000)
 
 // setProfileAccountInfo 存储 profile 账号信息
-export const setProfileAccountInfo = (accountInfo :AccountInfoType) => {
+export const setProfileAccountInfo = (accountInfo :AccountInfoType|any) => {
     LocalStorage.setValue(LocalProfileAccountKey, accountInfo)
 }
 
