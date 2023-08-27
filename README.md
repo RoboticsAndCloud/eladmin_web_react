@@ -1,5 +1,20 @@
 <h1 style="text-align: center">ELADMIN 后台管理前端（React）系统</h1>
 
+<p align="center">
+  <a href="https://github.com/facebook/react/">
+    <img src="https://img.shields.io/badge/react-18.1.0-brightgreen.svg" alt="react">
+  </a>
+  <a href="https://nodejs.org/en">
+    <img src="https://img.shields.io/badge/node-16.20.1-brightgreen.svg" alt="node">
+  </a>
+  <a href="https://www.npmjs.com" rel="nofollow">
+    <img src="https://img.shields.io/badge/npm-9.2.0-brightgreen.svg" alt="npm">
+  </a>
+  <a href="https://github.com/RoboticsAndCloud/eladmin_web_react/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/saltstack/salt" alt="license">
+  </a>
+</p>
+
 #### 项目简介
 - eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面
 - 本系统使用jsonserver模拟后端服务，若需要与eladmin后端进行联调，请调整接口数据格式及对应的后端服务地址
