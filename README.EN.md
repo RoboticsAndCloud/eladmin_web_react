@@ -19,7 +19,7 @@ English | [简体中文](./README.md)
 
 ## Introduction
 - eladmin web system is a web interface based on React + React-Router + Antd + Echarts 
-- Json-serve is adopted for mimicing the backed server. You need install a real `eladmin` server based on Spring-Boot, and change the API data structure of the Web system to communicate with each other
+- Json-server is adopted for mimicing the backed server. You need install a real `eladmin` server based on Spring-Boot, and change the API data structure of the Web system to communicate with each other
 
 **Online Demo：**  [https://roboticsandcloud.github.io/eladmin_web_react](https://roboticsandcloud.github.io/eladmin_web_react)
 
@@ -47,9 +47,9 @@ English | [简体中文](./README.md)
 
 ## Features
 
-#### Complete
-- 用户管理：提供用户的相关配置 
-- 角色管理：对权限与菜单进行分配，可根据部门设置角色的数据权限
+#### Completed
+- User Management：Add/Delete/Edit/Search users information 
+- Role Management：Manage roles, menus for relevant users 
 
 #### Developing
 - 菜单管理：已实现菜单动态路由，后端可配置化，支持多级菜单
@@ -97,7 +97,7 @@ $ npm start   # URL: http://localhost:3000
 Any suggestions or contributions are welcome.
 
 - If you like it，please [Star](https://github.com/RoboticsAndCloud/eladmin_web_react.git).
-- If you want to contribute some codes，Please [Pull Request](https://github.com/RoboticsAndCloud/eladmin_web_react/pulls).
+- If you want to contribute some codes，please [Pull Request](https://github.com/RoboticsAndCloud/eladmin_web_react/pulls).
 
 ## Thanks
 
