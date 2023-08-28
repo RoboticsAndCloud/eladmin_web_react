@@ -23,7 +23,7 @@ English | [简体中文](./README.md)
 
 **Online Demo：**  [https://roboticsandcloud.github.io/eladmin_web_react](https://roboticsandcloud.github.io/eladmin_web_react)
 
-**username/password：** `admin / admin`
+**Username/Password：** `admin / admin`
 
 **Source Code**
 
