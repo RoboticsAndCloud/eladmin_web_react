@@ -1,4 +1,4 @@
-<h1 style="text-align: center">ELADMIN 后台管理前端（React）系统</h1>
+<h1 style="text-align: center">The Frontend(React) of ELADMIN system </h1>
 
 <p align="center">
   <a href="https://github.com/facebook/react/">
@@ -52,19 +52,19 @@ English | [简体中文](./README.md)
 - Role Management：Manage roles, menus for relevant users 
 
 #### Developing
-- 菜单管理：已实现菜单动态路由，后端可配置化，支持多级菜单
-- 部门管理：可配置系统组织架构，树形表格展示
-- 岗位管理：配置各个部门的职位
-- 字典管理：可维护常用一些固定的数据，如：状态，性别等
-- 系统日志：记录用户操作日志与异常日志，方便开发人员定位排错
-- SQL监控：采用druid 监控数据库访问性能，默认用户名admin，密码123456
-- 定时任务：整合Quartz做定时任务，加入任务日志，任务运行情况一目了然
-- 代码生成：高灵活度生成前后端代码，减少大量重复的工作任务
-- 邮件工具：配合富文本，发送html格式的邮件
-- 七牛云存储：可同步七牛云存储的数据到系统，无需登录七牛云直接操作云数据
-- 支付宝支付：整合了支付宝支付并且提供了测试账号，可自行测试
-- 服务监控：监控服务器的负载情况
-- 运维管理：一键部署你的应用
+- Menu Management：
+- DepartmentManagement：
+- Position Management：
+- Dict Management：
+- System Logs：
+- SQL Monitoring：
+- Cron Jobs：
+- Code Generation：
+- Mail & Tools：
+- Cloud Storage：
+- Alipay：
+- Monitoring：
+- DevOps：
 
 
 ## Getting started
