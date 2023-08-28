@@ -15,6 +15,8 @@
   </a>
 </p>
 
+简体中文 |[English](./README.EN.md) 
+
 #### 项目简介
 - eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面
 - 本系统使用jsonserver模拟后端服务，若需要与eladmin后端Spring-Boot进行联调，请调整接口数据格式及对应的后端服务地址
