@@ -15,7 +15,7 @@
   </a>
 </p>
 
-简体中文 |[English](./README.EN.md) 
+简体中文 | [English](./README.EN.md) 
 
 ## 项目简介
 - eladmin web system 是一个基于 React + React-Router + Antd + Echarts 开发的后台管理系统的前端界面
