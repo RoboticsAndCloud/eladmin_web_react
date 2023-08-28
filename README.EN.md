@@ -48,6 +48,7 @@ English | [简体中文](./README.md)
 ## Features
 
 #### Completed
+- Login / Logout
 - User Management：Add/Delete/Edit/Search users information 
 - Role Management：Manage roles, menus for relevant users 
 
