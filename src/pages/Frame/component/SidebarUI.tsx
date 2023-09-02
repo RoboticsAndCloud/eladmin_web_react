@@ -8,6 +8,11 @@ interface FrameSidebarUIProps {
   collapsed?:boolean
 }
 
+
+const refreshCallback = () => {
+  window.location.href = '/eladmin_web_react';
+};
+
 const FrameSidebarUI = (props: FrameSidebarUIProps) => {
   return (
     <Layout.Sider trigger={null} collapsible collapsed={props.collapsed}

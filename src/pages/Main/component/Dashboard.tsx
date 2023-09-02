@@ -38,6 +38,7 @@ import DemoLine from './IndexLineChartUI';
 import DemoPie from './IndexPieChartUI';
 import DemoRadar from './IndexRadarChartUI';
 import DemoBar from './IndexBarChartUI';
+import SummaryStatistics from './IndexSumaryChartUI';
 const { Text, Link } = Typography;
 const { Meta } = Card;
 const formatter = (value: number) => <CountUp end={value} separator="," />;
@@ -61,7 +62,7 @@ const cardStyle: React.CSSProperties = {
 const MainDashbaordUI = (props: MainIndexUIProps) => {
   return (
     <div >
-
+      
       <div className="panel-body">
         <Alert
           showIcon
@@ -74,9 +75,11 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
         />
       </div>
       
-      {/* <div className="panel-body"> */}
+      <div className="panel-body">
+      {/* <div className="space-align-block"> */}
+        
         <Row gutter={24} className="panel-body">
-          <Col span={6}>
+          <Col span={6} >
             <Space align="center">
               <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
               <Statistic title="New Visits" value={112893} />
@@ -104,14 +107,15 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
           </Col>
         </Row>
       {/* </div> */}
+      </div>
 
       <div className="panel-body">
         <div className="space-align-block">
-          <DemoLine />
+          <SummaryStatistics />
         </div>
 
         <div className="space-align-block">
-          <Row gutter={24} className="panel-body">
+          <Row gutter={24} >
               <Col span={8}>
                 <DemoRadar />
               </Col>
