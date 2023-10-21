@@ -82,7 +82,7 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
         
         <Row gutter={24} className="panel-body">
           <Col span={6} >
-            <Space align="center" onClick={() => {window.location.href = '/';}}>
+            <Space align="center" onClick={() => {window.location.href = '/eladmin_web_react';}}>
               <Avatar style={{ backgroundColor: '#87d068', cursor:'pointer' }} icon={<UserOutlined />} />
               <Statistic title="New Visits" value={112893} />
             </Space>
