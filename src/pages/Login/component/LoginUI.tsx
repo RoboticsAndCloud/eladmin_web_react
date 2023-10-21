@@ -32,7 +32,7 @@ const SystemLoginUI = (props: LoginUIProps) => {
         <Input
           size="large"
           prefix={<UserOutlined className="site-form-item-icon" />}
-          placeholder="请输入系统登录账号"
+          placeholder="admin"
         />
       </Form.Item>
       <Form.Item name="password" rules={[{ required: true, message: '请输入系统登录密码!' }]}>
@@ -40,7 +40,7 @@ const SystemLoginUI = (props: LoginUIProps) => {
           size="large"
           prefix={<LockOutlined className="site-form-item-icon" />}
           type="password"
-          placeholder="请输入系统登录密码"
+          placeholder="admin"
         />
       </Form.Item>
       {/* <Form.Item name="captcha" rules={[{ required: true, message: '请输入验证码!' }]}>

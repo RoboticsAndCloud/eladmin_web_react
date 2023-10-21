@@ -38,7 +38,9 @@ import DemoLine from './IndexLineChartUI';
 import DemoPie from './IndexPieChartUI';
 import DemoRadar from './IndexRadarChartUI';
 import DemoBar from './IndexBarChartUI';
-import SummaryStatistics from './IndexSumaryChartUI';
+import SummaryStatistics from './IndexSummaryChartUI';
+import SummaryBarStatistics from './IndexSummaryBarUI';
+import { hover } from '@testing-library/user-event/dist/hover';
 const { Text, Link } = Typography;
 const { Meta } = Card;
 const formatter = (value: number) => <CountUp end={value} separator="," />;
@@ -80,28 +82,28 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
         
         <Row gutter={24} className="panel-body">
           <Col span={6} >
-            <Space align="center">
-              <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
+            <Space align="center" onClick={() => {window.location.href = '/';}}>
+              <Avatar style={{ backgroundColor: '#87d068', cursor:'pointer' }} icon={<UserOutlined />} />
               <Statistic title="New Visits" value={112893} />
             </Space>
           </Col>
           <Col span={6}>
             <Space align="center">
-              <Avatar style={{ backgroundColor: '#00bfff' }} icon = {<MessageOutlined />}/>
+              <Avatar style={{ backgroundColor: '#00bfff', cursor:'pointer'}} icon = {<MessageOutlined />}/>
               <Statistic title="Messages" value={81212} />
             </Space>
           </Col>
 
           <Col span={6}>
             <Space align="center">
-              <Avatar style={{ backgroundColor: '#FF1F4AFF' }} icon = {<MoneyCollectOutlined />}/>
+              <Avatar style={{ backgroundColor: '#FF1F4AFF', cursor:'pointer' }} icon = {<MoneyCollectOutlined />}/>
               <Statistic title="Account Balance (CNY)" value={9280} precision={2} />
             </Space>
           </Col>
 
           <Col span={6}>
             <Space align="center">
-              <Avatar style={{ backgroundColor: '#87d068' }} icon = {<ShoppingCartOutlined />}/>
+              <Avatar style={{ backgroundColor: '#87d068', cursor:'pointer' }} icon = {<ShoppingCartOutlined />}/>
               <Statistic title="Shoppings" value={13600} />
             </Space>
           </Col>
@@ -124,7 +126,7 @@ const MainDashbaordUI = (props: MainIndexUIProps) => {
               </Col>
 
               <Col span={8}>
-                <DemoBar />
+                <SummaryBarStatistics />
               </Col>
           </Row>
         </div>
